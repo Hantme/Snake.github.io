@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .map {
+            width: 640px;
+            height: 544px;
+            position: relative;
+            background:url(../Snake/bgImg.jpg) no-repeat;
+
+        }
+    </style>
+</head>
+<body>
+<div class="map"></div>
+<script src = "Food.js"></script>
+<script src = "Snake.js"></script>
+<script src = "Control.js"></script>
+<script>
+    var gm = new Game(document.querySelector(".map"));
+    gm.init();
+    //test code
+    // var fd = new Food;
+    // fd.init(document.querySelector(".map"));
+    // var snake = new Snake();
+    // setInterval(function(){
+    //     snake.init(document.querySelector(".map"));
+    //     snake.move(fd,document.querySelector(".map"));
+    // },150);
+    //snake.init(document.querySelector(".map"));
+    //snake.move(fd,document.querySelector(".map"));
+
+    //console.log(fd.width);
+</script>
+
+</body>
+</html>
